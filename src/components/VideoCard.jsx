@@ -10,13 +10,13 @@ const VideoCard = ({ video }) => {
     const navigate = useNavigate();
 
     return (
-        <Card onClick={() => navigate(videoId ? `/video/${videoId}` : demoVideoUrl)} sx={{ width: 340, bgcolor: "transparent" }}>
+        <Card onClick={() => navigate(videoId ? `/video/${videoId}` : demoVideoUrl)} sx={{ width: 340, bgcolor: "transparent", cursor: "pointer" }}>
             <CardMedia image={snippet?.thumbnails?.high?.url}
                 alt={snippet?.title}
                 sx={{ width: "100%", height: 190, borderRadius: "10px" }}
             />
 
-            <CardContent >
+            <CardContent  >
                 <Typography color="#fff" fontWeight="500">
                     {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
                 </Typography>

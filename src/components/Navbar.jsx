@@ -17,6 +17,8 @@ const Navbar = () => {
             </Link>
 
             <SearchBar />
+
+            <div></div>
         </Stack>
     )
 }
